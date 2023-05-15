@@ -1,10 +1,9 @@
 package com.provapratica.provapratica.entity;
 
 import javax.persistence.Entity;
-import javax.persistence.Table;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenereationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
 @Table(name = "tb_pedido")
