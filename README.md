@@ -1,5 +1,6 @@
 Autor: Bruno Varella Motta
-Requisitos: JAVA 11 + MAVEN 
+
+Requisitos: JAVA 17 + MAVEN 
 
 # ProvaPratica
 Repositório referente à prova prática da Net Precision

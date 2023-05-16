@@ -1,9 +1,6 @@
 package com.provapratica.provapratica.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "tb_pedido")
@@ -14,7 +11,7 @@ public class Pedido {
     private Long id;
     private int qtdProduto;
 
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name = "produto_id")
     private Produto produto;
 
