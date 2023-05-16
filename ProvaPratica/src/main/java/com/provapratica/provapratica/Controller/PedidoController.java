@@ -1,9 +1,11 @@
 package com.provapratica.provapratica.Controller;
 
 import com.provapratica.provapratica.entity.Pedido;
+import com.provapratica.provapratica.entity.Produto;
 import com.provapratica.provapratica.repository.PedidoRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -36,6 +38,17 @@ public class PedidoController {
     public Pedido insert(@RequestBody Pedido pedido){
         Pedido resultado = repository.save(pedido);
         return resultado;
+    }
+
+    @PostMapping
+    public Pedido insert(@RequestBody Pedido pedido, Produto produto, Produto qtdProduto){
+        Pedido resultado = repository.save(pedido);
+        return resultado;
+    }
+    
+    @DeleteMapping
+    public void delete(Pedido id){
+        repository.delete(id);
     }
 
 }

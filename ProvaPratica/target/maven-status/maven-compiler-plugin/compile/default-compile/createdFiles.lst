@@ -1,0 +1,7 @@
+com\provapratica\provapratica\repository\ProdutoRepository.class
+com\provapratica\provapratica\Controller\ProdutoController.class
+com\provapratica\provapratica\entity\Produto.class
+com\provapratica\provapratica\repository\PedidoRepository.class
+com\provapratica\provapratica\ProvapraticaApplication.class
+com\provapratica\provapratica\entity\Pedido.class
+com\provapratica\provapratica\Controller\PedidoController.class
